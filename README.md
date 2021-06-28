@@ -18,7 +18,7 @@ Enhver sommerstudent skal;
     - På topic-ressursen referert til i [navikt/sommerstudent-daemon](https://github.com/navikt/sommerstudent-daemon/blob/main/nais/topic-sommerstudent.yaml#L21), legg inn deres nå navngitte app vha. PR.
 3. Skrive Kotlin kode i fil [ProduceRoute.kt](src/main/kotlin/no/nav/ProduceRoute.kt#L17)
     - [Kode](https://github.com/confluentinc/examples/blob/6.1.1-post/clients/cloud/kotlin/src/main/kotlin/io/confluent/examples/clients/cloud/ProducerExample.kt#L73) man kan ta utgangspunkt i
-4. Legge inn [`NAIS_DEPLOY_KEY`](nais/nais.yaml#L30)en tilhørende namespacet `sommerstudenter2021` som hemmelighet i sitt forkede repo (finnes her: [NAIS deploys](https://deploy.nais.io))
+4. Legge inn [`NAIS_DEPLOY_APIKEY`](nais/nais.yaml#L30)en tilhørende namespacet `sommerstudenter2021` som hemmelighet i sitt forkede repo (finnes her: [NAIS deploys](https://deploy.nais.io))
 5. Utnytte [Github Workflow Pipeline](.github/workflows/main.yaml) til å deploye applikasjonen
 6. Sende HTTP GET Requests til `https://<github brukernavn>.dev.intern.nav.no`
 7. Kunne se [på dette Grafana dashboardet](https://grafana.nais.io/d/Ke8RDTgnz/sommerstudent-daemon2021?orgId=1) at meldingen ble mottatt av Kafka topicen! =)
